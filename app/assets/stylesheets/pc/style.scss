@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* ********************************************
+// --- リセット ---
+// ※ブラウザのデフォルトCSSをリセット
+// ***************************************** */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header,
+footer,
+nav,
+menu,
+article,
+aside,
+section,
+details,
+figcaption,
+figure {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a img {
+    border: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+}
+
+
+/*  */
+
+html {}
+
+body {
+    font-family: YuGothic, 'Yu Gothic', 'klee', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    background-color: #ccccc7;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-table;
+}
+
+
+/* ヘッダー */
