@@ -201,27 +201,27 @@ body > #main{
 }
 //////////////////////////////////////////
 
-.box {
+.main_box {
   width: 100%;
   min-height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  .main_box__item {
+    margin: -150px auto 0;
+    width: max-content;
+    padding: 15px 0px;
+    background-color: #fff;
+  }
+  h2{
+    font-size: 21px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 6px;
+  }
 }
 
-.box__item {
-  margin: 0 auto;
-  width: max-content;
-  padding: 15px 0px;
-  background-color: #fff;
-}
-//
-.box h2 {
-  font-size: 21px;
-  text-align: center;
-  font-weight: 100;
-  letter-spacing: 6px;
-}
 
 
 /////////////////////////
