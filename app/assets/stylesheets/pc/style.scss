@@ -13,6 +13,8 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 footer,
@@ -237,6 +239,7 @@ body > #main{
 .about{
   width: 100%;
   min-height: 80vh;
+  padding-bottom: 50px;
 }
 
 .box_about {
@@ -254,16 +257,16 @@ body > #main{
 
 .box__item__about {
     display: table;
-    width: 65%;
+    width: 63%;
     margin: auto;
     background-color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .box__item__about p {
     font-size: 18px;
     padding: 10px 0 10px;
-    line-height: 1.7em;
+    line-height: 30px;
     letter-spacing: 2px;
 }
 
@@ -274,12 +277,13 @@ body > #main{
 }
 
 .about_member {
+  text-align: center;
     padding: 50px 0 40px;
 }
 
 li.about_member {
     font-size: 13px;
-    line-height: 2em;
+    line-height: 15px;
     letter-spacing: 2px;
 }
 
@@ -289,4 +293,19 @@ li.about_member {
 
 .about_member a:hover {
     opacity: 0.7;
+}
+
+///footer//////////////////
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  // width: 100%;
+  // height: 30px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  p{
+    // text-align: center;
+  }
 }
