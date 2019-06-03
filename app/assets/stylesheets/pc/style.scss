@@ -309,3 +309,58 @@ li.about_member {
     // text-align: center;
   }
 }
+
+
+///event//////////////////////
+#event{
+  h1{
+    text-align: center;
+    margin: 50px auto 10px;
+  }
+  .event_box{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    .event_left{
+      width: 50%;
+      margin: 20px;
+      padding: 10px;
+      &__item{
+        img{
+          padding: 15px;
+          background-color: #fff;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .event_right{
+      width: 50%;
+      margin: 20px;
+      padding: 10px;
+      &__item{
+        .event_title{
+          font-size: 19px;
+          letter-spacing: 4px;
+          padding-bottom: 5px;
+          background-color: #fff;
+          vertical-align: text-top;
+          width: 100%;
+        }
+        .event_content{
+          background-color: #fff;
+          font-size: 14px;
+          margin-top: 30px;
+          line-height: 2em;
+          letter-spacing: 2px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .notes{
+    text-align: center;
+    margin: 80px auto 130px;
+  }
+}
