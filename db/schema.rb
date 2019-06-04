@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_03_140946) do
+ActiveRecord::Schema.define(version: 2019_06_04_004453) do
 
   create_table "event_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "event_id"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_140946) do
     t.string "title"
     t.text "content"
     t.text "note"
+    t.text "video_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
