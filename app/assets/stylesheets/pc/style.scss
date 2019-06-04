@@ -327,6 +327,7 @@ li.about_member {
   h1{
     text-align: center;
     margin: 50px auto 10px;
+    letter-spacing: 4px;
   }
   .event_container{
     margin-bottom: 200px;
@@ -376,5 +377,54 @@ li.about_member {
   .notes{
     text-align: center;
     margin: 80px auto 130px;
+  }
+}
+
+
+// reviews ////////////////////////////////////////////////
+#review{
+  margin-bottom: 100px;
+  .review_box{
+    width: 100%;
+    height: auto;
+    h1{
+      font-size: 2em;
+      text-align: center;
+      margin: 50px auto 10px;
+      letter-spacing: 4px;
+    }
+    .review_image{
+      padding: 40px 0;
+      p{
+        text-align: center;
+      }
+      img{
+        width: 50%;
+        padding: 15px;
+        background-color: #fff;
+      }
+    }
+    .review_content_box{
+      margin: 0 auto;
+      width: 65%;
+      .review_title{
+        margin: 0 auto;
+        width: max-content;
+        background-color: #fff;
+        h2{
+          font-size: 22px;
+          letter-spacing: 4px;
+        }
+      }
+      .review_content{
+        margin: 40px auto;
+        background-color: #fff;
+        p{
+          font-size: 15px;
+          line-height: 1.8em;
+          letter-spacing: 2px
+        }
+      }
+    }
   }
 }
