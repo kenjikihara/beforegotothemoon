@@ -92,6 +92,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: #006837;
 }
 
 .clearfix:after {
@@ -234,6 +235,16 @@ body > #main{
 }
 
 
+////////////////////////
+.paginate{
+  margin: 30px 15px;
+  .paginate-left{
+    float: left;
+  }
+  .paginate-right{
+    float: right;
+  }
+}
 /////////////////////////
 
 .about{

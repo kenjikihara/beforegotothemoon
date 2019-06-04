@@ -25,3 +25,7 @@
     </div>
   <% end %>
 </div>
+<div class="paginate">
+  <p class="paginate-left"><%= link_to_prev_page @events, 'Next Event' %></p>
+  <p class="paginate-right"><%= link_to_next_page @events, 'Previous Event' %></p>
+</div>
