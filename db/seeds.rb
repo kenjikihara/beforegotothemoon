@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 (1..3).each do |i|
-  event = Event.new(id: i, title: "title#{i}", content: "content#{i}", note: "note#{i}" )
-  event.save
+  review = Review.new(id: i, title: "title#{i}", content: "content#{i}", note: "note#{i}" )
+  review.save
 end

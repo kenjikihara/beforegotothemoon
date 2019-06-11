@@ -1,0 +1,40 @@
+<%= form_for([:admin, event]) do |f| %>
+  <div class="event_container">
+    <div class="event_box">
+
+      <div class="event_left">
+        <p class="event_left__item">
+          <% if action_name == 'edit' %>
+            <% event.event_images.each do |event_image| %>
+              <%= image_tag(event_image.image.url) %>
+            <% end %>
+          <% end %>
+          <%= f.fields_for :event_images do |event_image| %>
+            <%= event_image.file_field :image, multiple: true %>
+          <% end %>
+        </p>
+      </div>
+      <div class="event_right">
+        <div class="event_right__item">
+          <div class="event_title">
+            <p>タイトル</p>
+            <p><%= f.text_field :title %></p>
+          </div>
+          <div class="event_content">
+            <p>内容</p>
+            <%= f.text_area :content, rows: 30 %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video_path">
+      <!-- <p>iframe （動画があれば）</p> -->
+      <%#= f.text_area :video_path, rows: 10 %>
+    </div>
+
+    <div class="submit">
+      <p><%= f.submit title, class: 'submit' %></p>
+    </div>
+  </div>
+<% end %>

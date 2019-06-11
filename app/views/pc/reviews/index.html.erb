@@ -1,0 +1,22 @@
+<section id="review">
+  <div class="review_box">
+    <h1>BOOK/REVIEW</h1>
+    <% @reviews.each do |review| %>
+      <div class="review_image">
+        <p><%= image_tag 'bgm_main.JPG', width: '100%' %></p>
+      </div>
+      <div class="review_content_box">
+        <div class="review_title">
+          <h2><%= "#{review.id}. #{review.title}" %></h2>
+        </div>
+        <div class="review_content">
+          <p><%= simple_format(review.content) %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="paginate">
+    <p class="paginate-left"><%= link_to_prev_page @reviews, 'Next Review' %></p>
+    <p class="paginate-right"><%= link_to_next_page @reviews, 'Previous Review' %></p>
+  </div>
+</section>

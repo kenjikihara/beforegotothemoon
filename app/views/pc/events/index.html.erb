@@ -2,9 +2,19 @@
   <h1 class="top-title">WORKSHOP/EVENT</h1>
   <% @events.each do |event| %>
     <div class="event_container">
+      <div class="event_number">
+        <h1>みんなで月に行く前に Vol.<%= event.id %></h1>
+      </div>
       <div class="event_box">
+
         <div class="event_left">
-          <p class="event_left__item"><%= image_tag 'unbalanced_mobile.jpg', alt: "不均衡なモビール" %></p>
+          <p class="event_left__item">
+            <% if event.event_images.present? %>
+              <% event.event_images.each do |event_image| %>
+                <%= image_tag(event_image.image.url) %>
+              <% end %>
+            <% end %>
+          </p>
         </div>
         <div class="event_right">
           <div class="event_right__item">
@@ -18,7 +28,7 @@
         </div>
       </div>
       <% if event.video_path.present? %>
-        <div class="notes">
+        <div class="video_path">
           <%= vimeo_iframe(event.video_path) %>
         </div>
       <% end %>

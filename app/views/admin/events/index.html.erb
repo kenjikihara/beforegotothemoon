@@ -1,0 +1,11 @@
+
+<%= link_to '新規作成する', new_admin_event_path %>
+
+<h4>イベント一覧</h4>
+<% @events.each do |event| %>
+  <p>title: <%= event.title %>
+    <%= link_to '編集する', edit_admin_event_path(event)%>
+    <%= link_to '削除する', admin_event_path(event), method: :delete, data: { confirm: '本当に削除しますか?' } %>
+  </p>
+
+<% end %>
