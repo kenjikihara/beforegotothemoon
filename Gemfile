@@ -25,11 +25,6 @@ gem 'carrierwave'
 gem 'rmagick'
 # gem 'mini_magick', '~> 4.8'
 
-
-# admin
-gem 'bootstrap-sass'
-gem 'bootstrap_form'
-
 # Settings
 gem 'dotenv-rails'
 
@@ -40,12 +35,12 @@ gem 'dotenv-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'dotenv-rails'
 end
 
 group :development do
