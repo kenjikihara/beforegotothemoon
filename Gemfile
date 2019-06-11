@@ -11,6 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 # View/Presentation
+gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
@@ -20,7 +21,18 @@ gem "jquery-rails"
 gem 'kaminari'
 
 # Use ActiveStorage variant
+gem 'carrierwave'
+gem 'rmagick'
 # gem 'mini_magick', '~> 4.8'
+
+
+# admin
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+
+# Settings
+gem 'dotenv-rails'
+
 # gem 'redis', '~> 4.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

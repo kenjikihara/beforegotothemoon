@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   def index
-    @reviews = Review.order(created_at: :desc).page(params[:page]).per(1)
+    @reviews = Review.order(created_at: :desc).page(params[:page]).per(3)
   end
   def show
     @reviews = Review.order(created_at: :desc).page(params[:page]).per(1)

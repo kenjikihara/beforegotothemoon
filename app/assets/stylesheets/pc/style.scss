@@ -124,19 +124,13 @@ header{
       border-right: solid 1px #000;
     }
     #nav {
-        position: absolute;
-        margin: 0;
-        padding-left: 70px;
-        padding-bottom: 5px;
         display: flex;
-        bottom: 0;
+        justify-content: flex-start;
+        padding-top: 57px;
+        margin-left: 45px;
     }
     #nav li {
-        width: 100%;
-        text-align: center;
-        height: 50px;
-        line-height: 50px;
-        margin-right: 50px;
+        margin: 0 25px;
     }
     #nav li a {
         color: #000;
@@ -325,12 +319,22 @@ li.about_member {
 ///event//////////////////////
 #event{
   h1{
+    font-size: 36px;
     text-align: center;
     margin: 50px auto 10px;
     letter-spacing: 4px;
   }
   .event_container{
     margin-bottom: 100px;
+    border-bottom: solid 1px #000;
+  }
+  .event_number{
+    text-align: center;
+    h1{
+      font-size: 30px;
+      letter-spacing: 4px;
+    }
+
   }
   .event_box{
     width: 100%;
@@ -362,6 +366,10 @@ li.about_member {
           background-color: #fff;
           vertical-align: text-top;
           width: 100%;
+          input{
+            width: 99%;
+            height: 30px;
+          }
         }
         .event_content{
           background-color: #fff;
@@ -370,13 +378,26 @@ li.about_member {
           line-height: 2em;
           letter-spacing: 2px;
           width: 100%;
+          textarea{
+            width: 99%;
+          }
         }
       }
     }
   }
-  .notes{
+  .video_path{
     text-align: center;
     margin: 80px auto 30px;
+    textarea{
+      width: 50%;
+    }
+  }
+  .submit{
+    text-align: center;
+    padding-bottom: 30px;
+    input{
+      font-size: 50px;
+    }
   }
 }
 

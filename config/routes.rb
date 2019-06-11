@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   resources :events, only: [:index]
   resources :reviews, only: [:index, :show]
+
+  namespace :admin do
+    get '/' => 'dashboards#index'
+    resources :events, only: [:index, :new, :create, :edit]
+    resources :reviews, only: [:index]
+  end
 end
