@@ -1,0 +1,40 @@
+<%= form_for([:admin, review]) do |f| %>
+  <div class="review_container">
+    <div class="review_box">
+
+      <div class="review_left">
+        <p class="review_left__item">
+          <% if action_name == 'edit' %>
+            <% review.review_images.each do |review_image| %>
+              <%= image_tag(review_image.image.url) %>
+            <% end %>
+          <% end %>
+          <%= f.fields_for :review_images do |review_image| %>
+            <%= review_image.file_field :image, multiple: true %>
+          <% end %>
+        </p>
+      </div>
+      <div class="review_right">
+        <div class="review_right__item">
+          <div class="review_title">
+            <p>タイトル</p>
+            <p><%= f.text_field :title %></p>
+          </div>
+          <div class="review_content">
+            <p>内容</p>
+            <%= f.text_area :content, rows: 30 %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video_path">
+      <!-- <p>iframe （動画があれば）</p> -->
+      <%#= f.text_area :video_path, rows: 10 %>
+    </div>
+
+    <div class="submit">
+      <p><%= f.submit title, class: 'submit' %></p>
+    </div>
+  </div>
+<% end %>

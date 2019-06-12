@@ -3,7 +3,9 @@
     <h1>BOOK/REVIEW</h1>
     <% @reviews.each do |review| %>
       <div class="review_image">
-        <p><%= image_tag 'bgm_main.JPG', width: '100%' %></p>
+        <% if review.review_images.present? %>
+          <p><%= image_tag review.review_images.first.image.url, width: '100%' %></p>
+        <% end %>
       </div>
       <div class="review_content_box">
         <div class="review_title">
