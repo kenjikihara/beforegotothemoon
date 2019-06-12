@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>みんなで月に行く前に</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'sp/application', media: 'all' %>
+    <%= javascript_include_tag 'sp/application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'partials/header' %>
+    <div id="main">
+      <div id="left_side">
+        <%= yield %>
+      </div>
+      <%= render 'partials/right_side' %>
+      <%= render 'partials/footer' %>
+    </div><!--  main   -->
+  </body>
+</html>

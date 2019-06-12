@@ -1,0 +1,41 @@
+<div id="event">
+  <h1 class="top-title">WORKSHOP/EVENT</h1>
+  <% @events.each do |event| %>
+    <div class="event_container">
+      <div class="event_number">
+        <h1>みんなで月に行く前に Vol.<%= event.id %></h1>
+      </div>
+      <div class="event_box">
+
+        <div class="event_left">
+          <p class="event_left__item">
+            <% if event.event_images.present? %>
+              <% event.event_images.each do |event_image| %>
+                <%= image_tag(event_image.image.url) %>
+              <% end %>
+            <% end %>
+          </p>
+        </div>
+        <div class="event_right">
+          <div class="event_right__item">
+            <div class="event_title">
+              <p><%= event.title %></p>
+            </div>
+            <div class="event_content">
+              <p><%= simple_format(event.content) %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% if event.video_path.present? %>
+        <div class="video_path">
+          <%= vimeo_iframe(event.video_path) %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+<div class="paginate">
+  <p class="paginate-left"><%= link_to_prev_page @events, 'Next Event' %></p>
+  <p class="paginate-right"><%= link_to_next_page @events, 'Previous Event' %></p>
+</div>
