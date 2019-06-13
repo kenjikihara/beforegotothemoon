@@ -3,8 +3,8 @@
 
   <h4>Review一覧</h4>
   <% @reviews.each do |review| %>
-    <p>title: <%= review.title %>
-      <%= link_to '編集する', edit_admin_review_path(review)%>
+    <p><%= review.title %>
+      <%= link_to '編集する', edit_admin_review_path(review)%> /
       <%= link_to '削除する', admin_review_path(review), method: :delete, data: { confirm: '本当に削除しますか?' } %>
     </p>
   <% end %>
