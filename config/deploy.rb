@@ -5,7 +5,7 @@ lock '3.6.0'
 set :application, 'beforegotothemoon'
 
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/kenjikihara/beforegotothemoon'
+set :repo_url, 'https://github.com/kenjikihara/beforegotothemoon.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
