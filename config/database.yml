@@ -17,5 +17,5 @@ test:
 production:
   <<: *default
   database: beforegotothemoon_production
-  username: beforegotothemoon
-  password: <%= ENV['BEFOREGOTOTHEMOON_DATABASE_PASSWORD'] %>
+  username: root
+  password: 
